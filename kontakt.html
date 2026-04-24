@@ -1,16 +1,16 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kontakt zu Schablach Reinigung und Garten Services in Hannover. Telefon, E-Mail und Anfrageformular.">
+  <meta name="description" content="Kontakt zu Schablach Reinigung und Garten Services in Hannover. Telefon, WhatsApp, E-Mail und Anfrageformular.">
   <title>Kontakt | Schablach Reinigung und Garten Services</title>
   <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32.png">
   <link rel="shortcut icon" type="image/png" href="pictures/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,7 +25,11 @@
           <small>Reinigung und Garten Services</small>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">Menü</button>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
       <nav id="main-nav" class="site-nav" aria-label="Hauptnavigation">
         <a data-nav href="index.html">Start</a>
         <a data-nav href="leistungen.html">Leistungen</a>
@@ -41,46 +45,69 @@
     <section class="page-hero reveal">
       <div class="container">
         <p class="eyebrow">Kontakt</p>
-        <h1>Schnell erreichbar für Ihre Anfrage</h1>
-        <p>Rufen Sie uns direkt an oder senden Sie uns Ihre Anfrage per E-Mail. Wir melden uns zeitnah mit einer klaren Einschätzung zurück.</p>
+        <h1>Unverbindlich anfragen und zeitnah Rückmeldung erhalten</h1>
+        <p>Beschreiben Sie kurz, wobei Sie Unterstützung brauchen. Wir melden uns zeitnah mit einer klaren Einschätzung zurück.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid-page">
         <article class="contact-box reveal">
-          <h2>Direkter Kontakt</h2>
-          <p><strong>Telefon:</strong> <a href="tel:+491633656607">+49 163 3656607</a></p>
-          <p><strong>E-Mail:</strong> <a href="mailto:info@schablach.de">info@schablach.de</a></p>
-          <p><strong>Inhaber:</strong> Khaled Ali</p>
-          <p><strong>Standort:</strong> Hannover, Deutschland</p>
-          <p><strong>Einsatz:</strong> Hannover, Mönchengladbach, Bad Pyrmont</p>
+          <p class="eyebrow">Direkter Kontakt</p>
+          <h2>Am schnellsten per Telefon oder WhatsApp</h2>
+          <div class="contact-methods">
+            <a class="contact-method" href="tel:+491633656607">
+              <span>Telefon</span>
+              <strong>+49 163 3656607</strong>
+            </a>
+            <a class="contact-method" href="https://wa.me/491633656607" target="_blank" rel="noopener noreferrer">
+              <span>WhatsApp</span>
+              <strong>Nachricht schreiben</strong>
+            </a>
+            <a class="contact-method" href="mailto:info@schablach.de">
+              <span>E-Mail</span>
+              <strong>info@schablach.de</strong>
+            </a>
+          </div>
+          <div class="contact-facts">
+            <p><strong>Inhaber:</strong> Khaled Ali</p>
+            <p><strong>Standort:</strong> Hannover</p>
+            <p><strong>Einsatz:</strong> Hannover, Mönchengladbach, Bad Pyrmont nach Planung</p>
+          </div>
         </article>
 
         <article class="contact-box reveal">
-          <h2>Anfrage senden</h2>
+          <p class="eyebrow">Anfrageformular</p>
+          <h2>Unverbindlich anfragen</h2>
+          <p>Je genauer Ihre Angaben sind, desto besser können wir den Aufwand einschätzen.</p>
           <form class="contact-form" action="mailto:info@schablach.de" method="post" enctype="text/plain">
             <label for="name">Name</label>
-            <input id="name" name="Name" type="text" required>
+            <input id="name" name="Name" type="text" autocomplete="name" required>
 
             <label for="phone">Telefon</label>
-            <input id="phone" name="Telefon" type="tel">
+            <input id="phone" name="Telefon" type="tel" autocomplete="tel" required>
 
             <label for="mail">E-Mail</label>
-            <input id="mail" name="E-Mail" type="email" required>
+            <input id="mail" name="E-Mail" type="email" autocomplete="email">
 
-            <label for="service">Leistungsbereich</label>
-            <select id="service" name="Leistungsbereich">
+            <label for="service">Gewünschte Leistung</label>
+            <select id="service" name="Gewünschte Leistung" required>
+              <option value="">Bitte auswählen</option>
               <option>Reinigung</option>
               <option>Entrümpelung</option>
               <option>Gartenpflege</option>
               <option>Bodenarbeiten</option>
+              <option>Mehrere Leistungen</option>
             </select>
 
-            <label for="message">Nachricht</label>
-            <textarea id="message" name="Nachricht" rows="5" required></textarea>
+            <label for="location">Einsatzort</label>
+            <input id="location" name="Einsatzort" type="text" autocomplete="address-level2" placeholder="z. B. Hannover, Mönchengladbach oder Bad Pyrmont" required>
 
-            <button class="btn" type="submit">Anfrage per E-Mail senden</button>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="Nachricht" rows="6" placeholder="Was soll gemacht werden? Wann soll es erledigt werden? Gibt es Besonderheiten vor Ort?" required></textarea>
+
+            <p class="form-note">Wir melden uns zeitnah mit einer klaren Einschätzung zurück.</p>
+            <button class="btn" type="submit">Unverbindlich anfragen</button>
           </form>
         </article>
       </div>
@@ -88,10 +115,13 @@
 
     <section class="section cta-strip reveal">
       <div class="container cta-content">
-        <h2>Wenn es schnell gehen soll, rufen Sie uns direkt an.</h2>
+        <div>
+          <p class="eyebrow light">Schnellkontakt</p>
+          <h2>Wenn es dringend ist, rufen Sie uns direkt an.</h2>
+        </div>
         <div class="cta-actions">
           <a class="btn" href="tel:+491633656607">Jetzt anrufen</a>
-          <a class="btn btn-ghost-light" href="leistungen.html">Leistungen ansehen</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/491633656607" target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a>
         </div>
       </div>
     </section>
@@ -109,6 +139,8 @@
         <a href="ueber-uns.html">Über uns</a>
         <a href="einsatzgebiete.html">Einsatzgebiete</a>
         <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
       </nav>
       <div class="footer-contact">
         <a href="tel:+491633656607">+49 163 3656607</a>
@@ -118,8 +150,11 @@
     <p class="copyright">© <span id="year"></span> Schablach Reinigung und Garten Services · Hannover</p>
   </footer>
 
+  <div class="mobile-sticky-contact" aria-label="Schnellkontakt">
+    <a href="tel:+491633656607">Anrufen</a>
+    <a href="https://wa.me/491633656607" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
-
-

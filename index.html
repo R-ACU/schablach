@@ -1,16 +1,16 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Schablach Reinigung und Garten Services aus Hannover. Reinigung, Entrümpelung, Gartenpflege und Bodenarbeiten aus einer Hand.">
-  <title>Schablach Reinigung und Garten Services | Startseite</title>
+  <meta name="description" content="Schablach Reinigung und Garten Services aus Hannover. Reinigung, Entrümpelung, Gartenpflege und Bodenarbeiten für Privatkunden und Gewerbe.">
+  <title>Schablach Reinigung und Garten Services | Hannover</title>
   <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32.png">
   <link rel="shortcut icon" type="image/png" href="pictures/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,7 +25,11 @@
           <small>Reinigung und Garten Services</small>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">Menü</button>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
       <nav id="main-nav" class="site-nav" aria-label="Hauptnavigation">
         <a data-nav href="index.html">Start</a>
         <a data-nav href="leistungen.html">Leistungen</a>
@@ -43,20 +47,42 @@
       <div class="container hero-content">
         <p class="eyebrow light">Schablach Reinigung und Garten Services · Hannover</p>
         <h1>Sauberkeit, die wächst.</h1>
+        <p class="hero-subline">Zuverlässige Reinigung, Entrümpelung, Gartenpflege und Bodenarbeiten in Hannover und Umgebung.</p>
         <p class="hero-text">
-          Die Geschichte von Schablach beginnt bei einer Wasserquelle, die einer trockenen Region neues Leben gab.
-          Genau dieses Gefühl bringen wir in Ihre Räume und Außenflächen: gründlich, klar und sichtbar professionell.
+          Für Privatkunden und Gewerbe: persönlich abgestimmt, klar geplant und sauber erledigt. Sie sagen uns, was gemacht werden soll; wir melden uns zeitnah mit einer realistischen Einschätzung zurück.
         </p>
         <div class="hero-actions">
-          <a class="btn" href="kontakt.html">Kostenlose Beratung</a>
+          <a class="btn" href="kontakt.html">Kostenlose Anfrage stellen</a>
+          <a class="btn btn-light" href="tel:+491633656607">Jetzt anrufen</a>
           <a class="btn btn-ghost" href="leistungen.html">Leistungen ansehen</a>
         </div>
-        <ul class="hero-points">
-          <li>Qualität</li>
-          <li>Flexibilität</li>
+        <ul class="hero-points" aria-label="Vorteile">
+          <li>Persönlicher Ansprechpartner</li>
+          <li>Klare Absprachen</li>
           <li>Faire Preise</li>
-          <li>Zuverlässig</li>
+          <li>Terminsichere Ausführung</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Vertrauensvorteile">
+      <div class="container trust-grid">
+        <article class="trust-item reveal">
+          <h2>Persönlich</h2>
+          <p>Direkter Kontakt mit Inhaber Khaled Ali statt anonymer Vermittlung.</p>
+        </article>
+        <article class="trust-item reveal">
+          <h2>Verlässlich</h2>
+          <p>Klare Termine, klare Absprachen und saubere Übergabe.</p>
+        </article>
+        <article class="trust-item reveal">
+          <h2>Transparent</h2>
+          <p>Faire Einschätzung vor dem Auftrag, ohne unnötige Versprechen.</p>
+        </article>
+        <article class="trust-item reveal">
+          <h2>Flexibel</h2>
+          <p>Für einzelne Aufträge, regelmäßige Pflege und Gewerbeflächen.</p>
+        </article>
       </div>
     </section>
 
@@ -64,28 +90,61 @@
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Leistungsbereiche</p>
-          <h2>Stark im Detail, zuverlässig im Ergebnis</h2>
+          <h2>Wenn Reinigung, Ordnung, Garten und Boden sauber gelöst werden sollen</h2>
+          <p>Wir übernehmen Aufgaben, die Zeit kosten, schwer zu organisieren sind oder zuverlässig fertig werden müssen.</p>
         </div>
-        <div class="service-grid">
+        <div class="service-grid service-grid-visual">
           <article class="service-card reveal">
-            <h3>Reinigung</h3>
-            <p>Wohnungen, Büros, Restaurants, Praxen und sensible Bereiche mit klaren Hygienestandards.</p>
-            <a href="leistungen.html#reinigung">Mehr erfahren</a>
+            <!-- Bildplatzhalter: Reinigungskraft oder heller, sauberer Büroraum. Später durch eigenes Foto ersetzen. -->
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Reinigung eines hellen Innenraums" loading="lazy">
+            <div>
+              <h3>Reinigung</h3>
+              <p>Für Büros, Praxen, Gastronomie, Hotels und private Räume, wenn Hygiene und ein gepflegter Eindruck zählen.</p>
+              <ul class="mini-list">
+                <li>Unterhalts- und Grundreinigung</li>
+                <li>Fenster, Glas und Endreinigung</li>
+              </ul>
+              <a href="leistungen.html#reinigung">Reinigung ansehen</a>
+            </div>
           </article>
           <article class="service-card reveal">
-            <h3>Entrümpelung</h3>
-            <p>Wohnungsauflösungen, Sperrmüllabholung, Keller und Garagen inklusive fachgerechter Entsorgung.</p>
-            <a href="leistungen.html#entruempelung">Mehr erfahren</a>
+            <!-- Bildplatzhalter: leergeräumter Raum nach einer Entrümpelung. Später durch eigenes Foto ersetzen. -->
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Leergeräumter heller Raum" loading="lazy">
+            <div>
+              <h3>Entrümpelung</h3>
+              <p>Wenn Keller, Wohnung, Garage oder Gewerbefläche wieder nutzbar werden sollen, inklusive geordneter Entsorgung.</p>
+              <ul class="mini-list">
+                <li>Wohnungs- und Haushaltsauflösungen</li>
+                <li>Sperrmüll und fachgerechte Entsorgung</li>
+              </ul>
+              <a href="leistungen.html#entruempelung">Entrümpelung ansehen</a>
+            </div>
           </article>
           <article class="service-card reveal">
-            <h3>Gartenpflege</h3>
-            <p>Rasenpflege, Hecken, Schnittarbeiten, Neuanlagen, Pflaster und regelmäßige Betreuung.</p>
-            <a href="leistungen.html#gartenpflege">Mehr erfahren</a>
+            <!-- Bildplatzhalter: gepflegte Außenfläche oder Gartenpflege-Situation. Später durch eigenes Foto ersetzen. -->
+            <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=900&q=80" alt="Gepflegte Grünfläche mit Gartenarbeit" loading="lazy">
+            <div>
+              <h3>Gartenpflege</h3>
+              <p>Für Außenflächen, die wieder ordentlich aussehen und dauerhaft leichter zu pflegen sein sollen.</p>
+              <ul class="mini-list">
+                <li>Rasen, Hecken, Sträucher und Bäume</li>
+                <li>Beete, Neuanlagen und Pflasterarbeiten</li>
+              </ul>
+              <a href="leistungen.html#gartenpflege">Gartenpflege ansehen</a>
+            </div>
           </article>
           <article class="service-card reveal">
-            <h3>Bodenarbeiten</h3>
-            <p>Laminat und Vinyl mit solider Vorbereitung, passender Verlegung und sauberem Abschluss.</p>
-            <a href="leistungen.html#bodenarbeiten">Mehr erfahren</a>
+            <!-- Bildplatzhalter: Laminat- oder Vinylboden bei der Verlegung. Später durch eigenes Foto ersetzen. -->
+            <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=900&q=80" alt="Sauber verlegter Holzoptikboden" loading="lazy">
+            <div>
+              <h3>Bodenarbeiten</h3>
+              <p>Wenn Räume einen belastbaren, sauberen Bodenabschluss brauchen, von der Prüfung bis zur Leiste.</p>
+              <ul class="mini-list">
+                <li>Laminat, Vinyl und Sockelleisten</li>
+                <li>Untergrundprüfung und Materialberatung</li>
+              </ul>
+              <a href="leistungen.html#bodenarbeiten">Bodenarbeiten ansehen</a>
+            </div>
           </article>
         </div>
       </div>
@@ -94,28 +153,54 @@
     <section class="section split-section">
       <div class="container split-grid">
         <article class="panel reveal">
-          <p class="eyebrow">Über uns</p>
-          <h2>Ein Name, der für Erneuerung steht</h2>
+          <p class="eyebrow">Warum Schablach?</p>
+          <h2>Saubere Arbeit beginnt vor dem ersten Handgriff</h2>
           <p>
-            Der Name Schablach stammt aus einer alten Quelle, die karges Land wieder grün gemacht hat.
-            Diese Symbolik prägt unsere tägliche Arbeit: Räume und Außenflächen neu beleben, statt nur oberflächlich zu reinigen.
+            Schablach steht für eine einfache Arbeitsweise: zuhören, Aufwand einschätzen, Termin abstimmen und sauber ausführen. Sie bekommen keinen überladenen Ablauf, sondern eine klare Lösung für Ihr Objekt.
           </p>
-          <a class="text-link" href="ueber-uns.html">Zur Über-uns-Seite</a>
+          <p>
+            Der Name erinnert an eine Wasserquelle, die trockenes Land wieder nutzbar machte. Für uns bedeutet das: Orte wieder in einen gepflegten, brauchbaren Zustand bringen.
+          </p>
+          <a class="text-link" href="ueber-uns.html">Mehr über Schablach</a>
         </article>
-        <article class="panel panel-blue reveal">
-          <p class="eyebrow light">Einsatzgebiete</p>
-          <h3>Hannover, Mönchengladbach, Bad Pyrmont</h3>
-          <p>Regional unterwegs und flexibel verfügbar. Auf Wunsch arbeiten wir auch im direkten Umland der genannten Standorte.</p>
-          <a class="text-link light" href="einsatzgebiete.html">Google Maps und Gebiete ansehen</a>
+        <article class="panel panel-green reveal">
+          <p class="eyebrow light">Was Sie erwarten können</p>
+          <ul class="clean-list clean-list-light">
+            <li>Persönlicher Ansprechpartner für Rückfragen</li>
+            <li>Klare Absprachen zu Leistung, Termin und Umfang</li>
+            <li>Saubere Arbeit von der Anfrage bis zur Übergabe</li>
+            <li>Geeignet für Privatkunden und Gewerbe</li>
+          </ul>
         </article>
+      </div>
+    </section>
+
+    <section class="section area-preview">
+      <div class="container split-grid">
+        <article class="content-block reveal">
+          <p class="eyebrow">Einsatzgebiete</p>
+          <h2>Hauptstandort Hannover, weitere Einsätze nach Planung</h2>
+          <p>
+            Unser Hauptstandort ist Hannover. Je nach Auftrag und Terminplanung übernehmen wir auch Einsätze in Mönchengladbach, Bad Pyrmont und im jeweiligen Umland.
+          </p>
+          <a class="text-link" href="einsatzgebiete.html">Einsatzgebiete prüfen</a>
+        </article>
+        <div class="area-mini-grid reveal" aria-label="Einsatzregionen">
+          <span>Hannover</span>
+          <span>Mönchengladbach</span>
+          <span>Bad Pyrmont</span>
+        </div>
       </div>
     </section>
 
     <section class="section cta-strip reveal">
       <div class="container cta-content">
-        <h2>Sie möchten das Thema jetzt abschließen und ein verlässliches Team beauftragen?</h2>
+        <div>
+          <p class="eyebrow light">Kostenlose Anfrage</p>
+          <h2>Beschreiben Sie kurz Ihr Objekt. Wir melden uns mit einer klaren Einschätzung.</h2>
+        </div>
         <div class="cta-actions">
-          <a class="btn" href="kontakt.html">Kostenlose Beratung</a>
+          <a class="btn" href="kontakt.html">Unverbindlich anfragen</a>
           <a class="btn btn-ghost-light" href="tel:+491633656607">Jetzt anrufen</a>
         </div>
       </div>
@@ -134,6 +219,8 @@
         <a href="ueber-uns.html">Über uns</a>
         <a href="einsatzgebiete.html">Einsatzgebiete</a>
         <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
       </nav>
       <div class="footer-contact">
         <a href="tel:+491633656607">+49 163 3656607</a>
@@ -143,8 +230,11 @@
     <p class="copyright">© <span id="year"></span> Schablach Reinigung und Garten Services · Hannover</p>
   </footer>
 
+  <div class="mobile-sticky-contact" aria-label="Schnellkontakt">
+    <a href="tel:+491633656607">Anrufen</a>
+    <a href="https://wa.me/491633656607" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
-
-

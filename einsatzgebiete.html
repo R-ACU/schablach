@@ -1,16 +1,17 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Einsatzgebiete von Schablach Reinigung und Garten Services in Hannover, Mönchengladbach und Bad Pyrmont inklusive Google Maps Ansicht.">
+  <meta name="description" content="Einsatzgebiete von Schablach Reinigung und Garten Services: Hauptstandort Hannover, weitere Einsätze in Mönchengladbach und Bad Pyrmont nach Planung.">
   <title>Einsatzgebiete | Schablach Reinigung und Garten Services</title>
   <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32.png">
   <link rel="shortcut icon" type="image/png" href="pictures/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,7 +26,11 @@
           <small>Reinigung und Garten Services</small>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">Menü</button>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
       <nav id="main-nav" class="site-nav" aria-label="Hauptnavigation">
         <a data-nav href="index.html">Start</a>
         <a data-nav href="leistungen.html">Leistungen</a>
@@ -41,19 +46,47 @@
     <section class="page-hero reveal">
       <div class="container">
         <p class="eyebrow">Einsatzgebiete</p>
-        <h1>Für Sie unterwegs in drei Regionen</h1>
-        <p>Wir betreuen Kunden in Hannover, Mönchengladbach und Bad Pyrmont sowie im jeweiligen Umland.</p>
+        <h1>Hauptstandort Hannover, weitere Einsätze nach Absprache</h1>
+        <p>Unser Hauptstandort ist Hannover. Je nach Auftrag und Planung übernehmen wir auch Einsätze in Mönchengladbach, Bad Pyrmont und im jeweiligen Umland.</p>
+        <div class="page-hero-actions">
+          <a class="btn" href="kontakt.html">Einsatzort anfragen</a>
+          <a class="btn btn-secondary" href="tel:+491633656607">Jetzt anrufen</a>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="map-wrap reveal">
-          <iframe
-            title="Google Maps - Hannover"
-            src="https://www.google.com/maps?q=Hannover,+Germany&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="region-intro reveal">
+          <p class="eyebrow">Ehrlich geplant</p>
+          <h2>Wir prüfen jeden Einsatz passend zum Auftrag</h2>
+          <p>Reinigung, Entrümpelung, Gartenpflege und Bodenarbeiten lassen sich je nach Umfang unterschiedlich planen. Deshalb stimmen wir Ort, Termin und Aufwand vorab ab, statt pauschal zu viel zu versprechen.</p>
+        </div>
+        <div class="coverage-track reveal">
+          <article class="coverage-stop">
+            <span class="coverage-id">01</span>
+            <h3>Hannover</h3>
+            <p>Hauptstandort und erste Region für kurzfristige Einsätze, laufende Betreuung und Vor-Ort-Abstimmung.</p>
+          </article>
+          <article class="coverage-stop">
+            <span class="coverage-id">02</span>
+            <h3>Mönchengladbach</h3>
+            <p>Weitere Einsatzregion nach Auftrag, Umfang und Terminplanung.</p>
+          </article>
+          <article class="coverage-stop">
+            <span class="coverage-id">03</span>
+            <h3>Bad Pyrmont</h3>
+            <p>Flexible Einsätze in Bad Pyrmont und im Umland, wenn Planung und Auftrag zusammenpassen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="map-panel reveal">
+          <div id="service-map" class="service-map" role="img" aria-label="Interaktive Karte mit Hannover, Mönchengladbach und Bad Pyrmont"></div>
+          <p class="map-credit">Karte: OpenStreetMap Daten</p>
         </div>
       </div>
     </section>
@@ -62,27 +95,30 @@
       <div class="container area-cards">
         <article class="area-card reveal">
           <h2>Hannover</h2>
-          <p>Hauptregion für Reinigung, Gartenpflege und kurzfristige Einsätze.</p>
-          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Hannover">In Google Maps öffnen</a>
+          <p>Hauptstandort für Reinigung, Entrümpelung, Gartenpflege und Bodenarbeiten.</p>
+          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/search?query=Hannover">In OpenStreetMap öffnen</a>
         </article>
         <article class="area-card reveal">
           <h2>Mönchengladbach</h2>
-          <p>Regelmäßige Aufträge im privaten und gewerblichen Bereich.</p>
-          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/M%C3%B6nchengladbach">In Google Maps öffnen</a>
+          <p>Einsätze nach Absprache, passend zu Auftrag, Termin und Umfang.</p>
+          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/search?query=M%C3%B6nchengladbach">In OpenStreetMap öffnen</a>
         </article>
         <article class="area-card reveal">
           <h2>Bad Pyrmont</h2>
-          <p>Betreuung für Innen- und Außenbereiche mit flexiblem Terminplan.</p>
-          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Bad+Pyrmont">In Google Maps öffnen</a>
+          <p>Flexible Betreuung für Innen- und Außenbereiche nach Planung.</p>
+          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/search?query=Bad%20Pyrmont">In OpenStreetMap öffnen</a>
         </article>
       </div>
     </section>
 
     <section class="section cta-strip reveal">
       <div class="container cta-content">
-        <h2>Sie möchten prüfen, ob wir auch Ihre Adresse abdecken?</h2>
+        <div>
+          <p class="eyebrow light">Einsatz prüfen</p>
+          <h2>Sie möchten wissen, ob wir Ihre Adresse übernehmen können?</h2>
+        </div>
         <div class="cta-actions">
-          <a class="btn" href="kontakt.html">Kostenlose Beratung</a>
+          <a class="btn" href="kontakt.html">Einsatzort anfragen</a>
           <a class="btn btn-ghost-light" href="tel:+491633656607">Jetzt anrufen</a>
         </div>
       </div>
@@ -101,6 +137,8 @@
         <a href="ueber-uns.html">Über uns</a>
         <a href="einsatzgebiete.html">Einsatzgebiete</a>
         <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
       </nav>
       <div class="footer-contact">
         <a href="tel:+491633656607">+49 163 3656607</a>
@@ -110,8 +148,12 @@
     <p class="copyright">© <span id="year"></span> Schablach Reinigung und Garten Services · Hannover</p>
   </footer>
 
+  <div class="mobile-sticky-contact" aria-label="Schnellkontakt">
+    <a href="tel:+491633656607">Anrufen</a>
+    <a href="https://wa.me/491633656607" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
